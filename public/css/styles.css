@@ -1,0 +1,82 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-size: 15px;
+  margin: 0;
+  line-height: 24px;
+}
+
+body {
+  margin: 0;
+  background-color: #efefef;
+}
+
+body, html, #app, #app > div{
+  height: 100%;
+}
+
+a {
+  color: #ff4081;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.m-b-15 {
+  margin-bottom: 15px
+}
+
+.navigation {
+  fontSize: 15,
+  paddingBottom: 15,
+  display: 'block'
+}
+.title {
+  fontSize: 24,
+  marginBottom: 20
+}
+.paper: {
+  padding: 30
+}
+.clear {
+  clear: 'both'
+}
+
+.screenshot {
+  width: 400px;
+  text-align: center;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 20%;
+  margin-top: 8px;
+}
+
+.datagrid-cell{
+  margin: 18px;
+}
+
+.datagrid-row-detail .f-column{
+  margin: 20px;
+}
+
+.datagrid-row-detail .f-row{
+  background-color: beige;
+}
+.modal-footer{
+  height: 0px !important;
+}
+.modal-action {
+  position: absolute !important;
+  top: 30px !important;
+  right: 30px !important;
+}
+.fa-info-circle {
+  display: none;
+}
