@@ -24,7 +24,7 @@ const BrowserUsage = (props) => {
 
   return (
     <Paper style={styles.paper}>
-      <span style={GlobalStyles.title}>Porcentaje </span>
+      <span style={GlobalStyles.title}>Engagement Total </span>
 
       <div style={GlobalStyles.clear}/>
 

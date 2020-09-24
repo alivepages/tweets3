@@ -65,7 +65,7 @@ render() {
   if (!this.props.data && !!this.props.data[0]) return <div></div>;
 
   var nrow=this.state.nrow;
-  console.log('state', nrow);
+
   if (!nrow) nrow = this.props.data[0]; 
 
   if (!nrow) return <div></div>;
@@ -119,7 +119,7 @@ render() {
       .filter(row => {
         let name = '';
         
-        let key = this.props.searchKey.toLowerCase();
+        let key = this.props.post.toLowerCase(); //this.props.searchKey.toLowerCase();
         //console.log(key);
         if (row.message !=  null) {
             name = row.message.toLowerCase();      

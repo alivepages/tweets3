@@ -41,7 +41,7 @@ const RecentlyProducts = (props) => {
   return (
     <Paper>
       <List>
-        <Subheader style={styles.subheader}>Principales bots</Subheader>
+        <Subheader style={styles.subheader}>Principales tweets</Subheader>
         {props.data.map(item =>
           <div key={item.title}>
             <ListItem

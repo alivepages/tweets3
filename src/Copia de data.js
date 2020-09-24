@@ -28,10 +28,10 @@ const data = {
   },
   dashBoardPage: {
     recentProducts: [
-      {id: 1, title: 'maria_ariza', text: 'Un pequeño tuit nocturno para brindar por todas las mamás trabajadoras. Está duro pero vamos día a día.'},
-      {id: 2, title: 'maria_ariza', text: 'Bienvenida Traxion a la #FamiliaBiva!!!!! Gracias por su confianza!!!!! '},
-      {id: 3, title: 'maria_ariza', text: 'Hermoso nuestro México '},
-      {id: 4, title: 'maria_ariza', text: 'Gracias Traxion!!! Vamos México!!!'}
+      {id: 1, title: 'Samsung TV', text: 'Samsung 32 1080p 60Hz LED Smart HDTV.'},
+      {id: 2, title: 'Playstation 4', text: 'PlayStation 3 500 GB System'},
+      {id: 3, title: 'Apple iPhone 6', text: 'Apple iPhone 6 Plus 16GB Factory Unlocked GSM 4G '},
+      {id: 4, title: 'Apple MacBook', text: 'Apple MacBook Pro MD101LL/A 13.3-Inch Laptop'}
     ],
     monthlySales: [
       {name: 'Jan', uv: 3700},
@@ -57,9 +57,9 @@ const data = {
       {pv: 4300}
     ],
     browserUsage: [
-      {name: 'maria_ariza', value: 800, color: cyan600, icon: <ExpandMore/>},
-      {name: 'BMV', value: 300, color: pink600, icon: <ChevronRight/>},
-      {name: 'NASDAQ', value: 300, color: purple600, icon: <ExpandLess/>}
+      {name: 'Chrome', value: 800, color: cyan600, icon: <ExpandMore/>},
+      {name: 'Firefox', value: 300, color: pink600, icon: <ChevronRight/>},
+      {name: 'Safari', value: 300, color: purple600, icon: <ExpandLess/>}
     ]
   }
 };

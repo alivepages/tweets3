@@ -17,6 +17,7 @@ class Stats extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    console.log(nextProps.width);
     if (this.props.width !== nextProps.width) {
       this.setState({navDrawerOpen: nextProps.width === LARGE});
     }
