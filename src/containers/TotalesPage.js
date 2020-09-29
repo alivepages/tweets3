@@ -77,7 +77,32 @@ render() {
     <PageBase title={this.props.title}
               navigation={nav}>
 
-<h1>{nrow.id}</h1>
+<h1></h1>
+
+<Modal id="mod" trigger={trigger} ref="modal" heder="Detalles"
+    actions={[
+      <Button flat modal="close" node="top" waves="green">X</Button>
+    ]}>
+    
+  
+
+
+<div class="modal-header"><h4 class="modal-title">Usuario</h4></div><div class="modal-body"><div class="container-fluid"><div class="row flex"><div class="col-md-8"><div class="this.props.row"><div class="panel-body"><div class="media"><div class="media-left wider"><img src={nrow.json.profile_image_url} onload="$(&quot;body&quot;).trigger(&quot;img.loaded&quot;, this)" onerror="$(&quot;body&quot;).trigger(&quot;img.error&quot;, this)" class="img-armed company-thumbnail-md"/><ul class="post-meta-list"><li><div class="channel-pill twitter"></div></li><li><span class="center-block label label-default">Photo</span></li></ul></div><div class="media-body"><a href="#" class="focus-company-link">{nrow.user}</a>
+&nbsp;<span class="small text-muted">{'@'+nrow.json.screen_name}</span>
+
+
+<div class="small">{nrow.json.created_at}</div><div class="post-tag-pills"><div>
+</div></div><div class="post-content"><p></p>
+  
+<p/>
+  
+  <div class="col-md-12 post-type"></div><p></p>
+  <img src="" onload="$(&quot;body&quot;).trigger(&quot;img.loaded&quot;, this)" onerror="$(&quot;body&quot;).trigger(&quot;img.error&quot;, this)" class="img-armed post-image-lg"/><ul class="post-actions list-inline x-export-hide"><li><a target="_blank" href={'https://twitter.com/'+nrow.json.screen_name} target="_blank" class="small text-muted"><i class="fa fa-fw fa-external-link"></i>Ver en Twitter</a></li></ul></div></div></div></div></div></div><div class="col-md-4 metrics-region general social-posts"><div><div class="x-metric-layout row"><div class="metric-layout"><div class="metric-row"><table><tbody><tr><th class="metric-value-cell"><span data-toggle="tooltip" data-container="body" title="" data-original-title="307">{nrow.engagementTotal}</span></th><th class="metric-label-cell">Favoritos<span title="" data-toggle="popover" data-placement="right" data-content="The total number of likes, retweets, and replies on this published tweet." data-trigger="hover" data-container="body" class="vertical-align-middle fa fa-fw fa-color pointer x-export-hide fa-info-circle rivaliq-popover" data-original-title="Engagement Total"></span></th></tr><tr><td class="metric-value-cell"><span data-toggle="tooltip" data-container="body" title="" data-original-title="253">{nrow.user.favorites_count}</span></td><td class="metric-label-cell">Favourites<span title="" data-toggle="popover" data-placement="right" data-content="The number of likes on this published tweet." data-trigger="hover" data-container="body" class="vertical-align-middle fa fa-fw fa-color pointer x-export-hide fa-info-circle rivaliq-popover" data-original-title="Likes"></span></td></tr><tr><td class="metric-value-cell"><span data-toggle="tooltip" data-container="body" title="" data-original-title="44">{nrow.user.friends_count}</span></td><td class="metric-label-cell">Friends<span title="" data-toggle="popover" data-placement="right" data-content="The number of (native) retweets on this published tweet." data-trigger="hover" data-container="body" class="vertical-align-middle fa fa-fw fa-color pointer x-export-hide fa-info-circle rivaliq-popover" data-original-title="Retweets"></span></td></tr><tr><td class="metric-value-cell"><span data-toggle="tooltip" data-container="body" title="" data-original-title="10">{nrow.user.followers_count}</span></td><td class="metric-label-cell">Followers<span title="" data-toggle="popover" data-placement="right" data-content="The number of (native) replies on this published tweet." data-trigger="hover" data-container="body" class="vertical-align-middle fa fa-fw fa-color pointer x-export-hide fa-info-circle rivaliq-popover" data-original-title="Replies"></span></td></tr></tbody></table></div>
+  
+  </div></div></div></div></div></div></div>
+          
+
+          </Modal>
 
 <div className="post-container">
 
@@ -113,7 +138,7 @@ render() {
             </div>
           </td>
           
-          <td className="">
+          <td className=""  onClick={this._handleClick.bind(this,row)}>
             <div><div className="post-published-timezone"><strong>{row.user}</strong></div></div>
           </td>
 
