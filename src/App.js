@@ -1,14 +1,10 @@
 import React from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import LoginPage from './containers/LoginPage';
-import Visits from './containers/Visits';
 import Tweets from './containers/Tweets';
-import Visit from './containers/Visit';
-import Users from './containers/Users';
-import User from './containers/User';
+import Totales from './containers/Totales';
 import Stats from './containers/Stats';
-import All from './containers/All';
-import Actives from './containers/Actives';
+
 
 
 const DynamicRoute = (props) => {
@@ -33,12 +29,7 @@ function App() {
       <Switch>
         <Route path='/login' component={LoginPage}/>
         <Route path='/tweets' component={Tweets}/>
-        <Route path='/visits' component={Visits}/>
-        <Route path='/visit/:id' component={Visit}/>
-        <Route path='/all' component={All}/>
-        <Route path='/actives' component={Actives}/>
-        <Route path='/users' component={Users}/>
-        <Route path='/user/:id' component={User}/>
+        <Route path='/totales' component={Totales}/>
         <Route path='/stats' component={Stats}/>
         <Route path='/' component={Stats}/>
         <Route component={NoMatch404}/>

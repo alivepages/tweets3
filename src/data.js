@@ -12,6 +12,7 @@ const data = {
   menus: [
     { text: 'Estadísticas', icon: <Assessment/>, link: '/stats' },
     { text: 'Tweets', icon: <Web/>, link: '/tweets' },
+    { text: 'Totales', icon: <Web/>, link: '/totales' },
     { text: 'Salir', icon: <PermIdentity/>, link: '/login' }
   ],
   tablePage: {
